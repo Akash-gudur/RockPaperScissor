@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #87CEFA
+}
+h1{
+    background-color: rgb(49, 45, 46);
+    color:white;
+    height: 70px;
+    text-align: center;
+    line-height: 4.5rem;
+    border: 2px solid white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 1);
+}
+.choice{
+    display: flex;
+    height: 160px;
+    width: 160px;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 1) ;
+
+}
+.choice:hover{
+    background-color: rgb(85, 79, 79);
+    cursor: pointer;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap; 
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top:8rem;
+    gap:5rem;
+}
+#user-score{
+    font-size: 50px;
+    text-align: center;
+    color:green;
+    font-weight: 500;
+}
+#comp-score{
+    font-size: 50px;
+    text-align: center;
+    color:red;
+    font-weight: 500;
+}
+.msg-container{
+    margin-top: 4rem;
+    justify-content: center;
+    text-align: center;
+}
+#msg{
+    background-color:black;
+    color: white;
+    display: inline;
+    font-size: 3rem;
+    border-radius: 8px;
+    padding: 7px;
+    padding: 8px;
+    border: 1px white;
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 1) ;
+}
+.score .text{
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 8px;
+    width:150px;
+    text-align: center;
+    background-color: azure;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+    img {
+        height: 110px;
+        width: 110px;
+    }
+    .choices {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .score-board {
+        font-size: 20px;
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+    #user-score, #comp-score {
+        font-size: 30px;
+    }
+    #msg {
+        font-size: 2rem;
+        padding: 5px;
+    }
+    .score .text {
+        margin-top: 0.5rem;
+        padding: 5px;
+        width: 120px;
+    }
+}
